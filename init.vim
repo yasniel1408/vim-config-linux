@@ -114,4 +114,11 @@ colorscheme tokyonight
 "Close tags automatically
 "Cerrar tags automaticamente
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.js, *.ts, *.tsx'
+
+"autosave
+let g:auto_save = 1  " enable AutoSave on Vim startup
+let g:auto_save_events = ["TextChanged"] " InsertLeave, TextChanged, CursorHold, CompleteDone
+let g:auto_save_write_all_buffers = 1  " write all open buffers as if you would use :wa
+
+
 "-----------------------------------------------------------------

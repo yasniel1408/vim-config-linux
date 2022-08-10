@@ -1,5 +1,6 @@
 "Plugins
-call plug#begin('~/AppData/Local/nvim/plugged')
+call plug#begin('/Users/yasniel/.config/nvim/plugged')
+
 "Temas
 "Themes
 Plug 'morhetz/gruvbox'
@@ -19,7 +20,6 @@ Plug 'christoomey/vim-tmux-navigator'
 "NERDTREE
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-Plug 'jistr/vim-nerdtree-tabs'      
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
@@ -28,8 +28,19 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 "Stable version of coc
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-tslint', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} " mru and stuff
+Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} " color highlighting
+Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}'
+ 
 "Close pairs () [] {} ''
 "Cerrar los pares () [] {} '' 
 Plug 'jiangmiao/auto-pairs'
@@ -63,12 +74,15 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'psliwka/vim-smoothie'
 
 "REACT
-Plug 'SirVer/ultisnips'
 Plug 'mlaursen/vim-react-snippets'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'eslint/eslint'
 Plug 'prettier/prettier'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'bentayloruk/vim-react-es6-snippets'
+Plug 'dominikduda/vim_es7_javascript_react_snippets'
 
 "Lenguaje
 Plug 'inkarkat/vim-spellcheck'
@@ -92,5 +106,14 @@ Plug 'c9s/vikube.vim'
 "https://vimawesome.com/plugin/vim-kubernetes
 Plug 'andrewstuart/vim-kubernetes'
 
+"Auto save
+Plug '907th/vim-auto-save'
+
+
+"Errors inline
+Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
+
 "_____________________________
 call plug#end()
+
