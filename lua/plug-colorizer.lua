@@ -12,3 +12,6 @@ require'colorizer'.setup(
 		-- Red Yellow LightBlue Green Gray Violet Purple Salmon 
   })
 
+use {'dsznajder/vscode-es7-javascript-react-snippets',
+run = 'yarn install --frozen-lockfile && yarn compile'
+}

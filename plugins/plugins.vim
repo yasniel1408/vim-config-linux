@@ -12,6 +12,8 @@ Plug 'ghifarit53/tokyonight-vim'
 
 "IDE
 Plug 'easymotion/vim-easymotion'
+Plug 'camspiers/animate.vim'
+Plug 'camspiers/lens.vim'
 
 "Navigate with C-h C-l C-j C-k
 "Navegar con C-h C-l C-j C-k
@@ -83,6 +85,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'bentayloruk/vim-react-es6-snippets'
 Plug 'dominikduda/vim_es7_javascript_react_snippets'
+Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 
 "Lenguaje
 Plug 'inkarkat/vim-spellcheck'
