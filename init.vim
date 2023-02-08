@@ -71,6 +71,8 @@ let g:indentLine_fileTypeExclude=["nerdtree"]
 "open nerdtree
 nmap <Leader>e :NERDTree<CR>
 let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.git$']
+let NERDTreeIgnore=['\.git$', '\.idea$', '\.vscode$', '\.history$']
 
 "open cocExplorer 
 "Buscar dos carácteres con easymotion
