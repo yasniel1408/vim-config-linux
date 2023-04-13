@@ -95,7 +95,6 @@ Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --f
 Plug 'fatih/vim-go'
 
 " Generic Programming Support
-Plug 'jakedouglas/exuberant-ctags'
 Plug 'honza/vim-snippets'
 Plug 'Townk/vim-autoclose'
 Plug 'tomtom/tcomment_vim'
@@ -135,7 +134,6 @@ Plug 'andrewstuart/vim-kubernetes'
 
 "Auto save
 Plug '907th/vim-auto-save'
-
 
 "Errors inline
 Plug 'w0rp/ale'

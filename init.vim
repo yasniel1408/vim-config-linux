@@ -95,10 +95,10 @@ nmap <leader>bd :bdelete<CR>
 "let g:gruvbox_contrast_dark = "medium" Using Lua functions: tescope 
 "
 
-nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap <leader>FF <cmd>lua require('telescope.builtin').grep_string()<cr>
-nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr> "Buscar un archivo
+nnoremap <leader>FF <cmd>lua require('telescope.builtin').grep_string()<cr> "Buscar una palabra que tenga marcada
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr> "Buscar una palabra entre los archivos
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr> "Buscar una ventana de las que tengo abierta
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <leader>gb <cmd>lua require('telescope.builtin').git_branches()<cr>
 nnoremap <leader>gs <cmd>lua require('telescope.builtin').git_status()<cr>
@@ -127,7 +127,7 @@ let g:auto_save_write_all_buffers = 1  " write all open buffers as if you would 
 "
 "" Importación automática al guardar en go
 " format with goimports instead of gofmt
-letg:go_fmt_command = "goimports"
+let g:go_fmt_command = "goimports"
 " Dictionary
 set spell
 set spelllang=es,en
