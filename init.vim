@@ -48,7 +48,6 @@ source ~/.config/nvim/themes/onedark.vim
 "save file
 "guardar archivo
 nmap <leader>w :w <CR>
-
 "cerrar ventana
 "close current  window
 nmap <C-w> :q <CR>
@@ -124,5 +123,11 @@ let g:auto_save = 1  " enable AutoSave on Vim startup
 let g:auto_save_events = ["TextChanged"] " InsertLeave, TextChanged, CursorHold, CompleteDone
 let g:auto_save_write_all_buffers = 1  " write all open buffers as if you would use :wa
 
-
 "-----------------------------------------------------------------
+"
+"" Importación automática al guardar en go
+" format with goimports instead of gofmt
+letg:go_fmt_command = "goimports"
+" Dictionary
+set spell
+set spelllang=es,en

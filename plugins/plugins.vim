@@ -71,6 +71,10 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'kablamo/vim-git-log'
+Plug 'gregsexton/gitv'
+Plug 'tpope/vim-fugitive'
+Plug 'jaxbot/github-issues.vim'
 
 "Smooth Scrolling
 Plug 'psliwka/vim-smoothie'
@@ -87,9 +91,29 @@ Plug 'bentayloruk/vim-react-es6-snippets'
 Plug 'dominikduda/vim_es7_javascript_react_snippets'
 Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 
+" Plugin Go
+Plug 'fatih/vim-go'
+
+" Generic Programming Support
+Plug 'jakedouglas/exuberant-ctags'
+Plug 'honza/vim-snippets'
+Plug 'Townk/vim-autoclose'
+Plug 'tomtom/tcomment_vim'
+Plug 'tobyS/vmustache'
+Plug 'janko-m/vim-test'
+Plug 'maksimr/vim-jsbeautify'
+Plug 'vim-syntastic/syntastic'
+Plug 'neomake/neomake'
+
 "Lenguaje
 Plug 'inkarkat/vim-spellcheck'
 Plug 'dpelle/vim-languagetool'
+
+" Markdown / Writting
+Plug 'reedes/vim-pencil'
+Plug 'tpope/vim-markdown'
+Plug 'jtratner/vim-flavored-markdown'
+Plug 'LanguageTool'
 
 "Docker
 Plug 'ekalinin/dockerfile.vim'

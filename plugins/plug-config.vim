@@ -60,7 +60,7 @@ let g:lightline = {
    'component_function': {
      'blame': 'LightlineGitBlame',
    }
- }
+ } 
 
 function! LightlineGitBlame() abort
   let blame = get(b:, 'coc_git_blame', '')
