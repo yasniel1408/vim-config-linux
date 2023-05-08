@@ -1,5 +1,5 @@
 "Plugins
-call plug#begin('/Users/yasniel/.config/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 "Temas
 "Themes
@@ -44,7 +44,7 @@ Plug 'neoclide/coc-tslint', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} "mru and stuff
 Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} "color highlighting
-Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}'
+Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}
 
 "Close pairs () [] {} ''
 "Cerrar los pares () [] {} ''
@@ -91,7 +91,7 @@ Plug 'bentayloruk/vim-react-es6-snippets'
 Plug 'dominikduda/vim_es7_javascript_react_snippets'
 Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 
-" Generic Programming Support
+"Generic Programming Support
 Plug 'honza/vim-snippets'
 Plug 'Townk/vim-autoclose'
 Plug 'tomtom/tcomment_vim'
@@ -105,7 +105,7 @@ Plug 'neomake/neomake'
 Plug 'inkarkat/vim-spellcheck'
 Plug 'dpelle/vim-languagetool'
 
-" Markdown / Writting
+"Markdown / Writting
 Plug 'reedes/vim-pencil'
 Plug 'tpope/vim-markdown'
 Plug 'jtratner/vim-flavored-markdown'

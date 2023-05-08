@@ -24,6 +24,7 @@ set laststatus=2
 set backspace=2
 set guioptions-=T
 set guioptions-=L
+set fileformat=unix
 
 "Get out of insert mode
 "Salir de modo insertar
@@ -43,7 +44,6 @@ vnoremap > >gv
 "-------------------------------Sources-------------------------------
 source ~/.config/nvim/plugins/plugins.vim
 source ~/.config/nvim/plugins/plug-config.vim
-source ~/.config/nvim/lua/init.lua
 source ~/.config/nvim/themes/onedark.vim
 "--------------------------------Plugins Config--------------------------------------------
 "save file
@@ -74,6 +74,16 @@ let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.git$']
 let NERDTreeIgnore=['\.git$', '\.idea$', '\.vscode$', '\.history$']
 
+
+
+function! SetupCommandAbbrs(from, to)
+  exec 'cnoreabbrev <expr> '.a:from
+        \ .' ((getcmdtype() ==# ":" && getcmdline() ==# "'.a:from.'")'
+        \ .'? ("'.a:to.'") : ("'.a:from.'"))'
+endfunction
+
+" Use C to open coc config
+call SetupCommandAbbrs('C', 'CocConfig')
 "open cocExplorer
 "Buscar dos carácteres con easymotion
 "Search for two chars with easymotion

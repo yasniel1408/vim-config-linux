@@ -4,14 +4,13 @@
 "██╔═══╝░██║░░░░░██║░░░██║██║░░╚██╗╚════╝██║░░██╗██║░░██║██║╚████║██╔══╝░░██║██║░░╚██╗
 "██║░░░░░███████╗╚██████╔╝╚██████╔╝░░░░░░╚█████╔╝╚█████╔╝██║░╚███║██║░░░░░██║╚██████╔╝
 "╚═╝░░░░░╚══════╝░╚═════╝░░╚═════╝░░░░░░░░╚════╝░░╚════╝░╚═╝░░╚══╝╚═╝░░░░░╚═╝░╚═════╝░
-
 "import COC config
 source ~/.config/nvim/plugins/coc-config.vim
-
+"
 "▄▀█ █ █▀█ █░░ █ █▄░█ █▀▀
 "█▀█ █ █▀▄ █▄▄ █ █░▀█ ██▄
-
-" enable tabline
+"
+"enable tabline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
@@ -63,14 +62,8 @@ let g:lightline = {
   \ }
 
 
-" Set the statusline height
-let g:lightline.height = 1
-
-" Enable tabline mode
-let g:lightline.tabline = 1
-
 function! LightlineGitBlame() abort
   let blame = get(b:, 'coc_git_blame', '')
-  " return blame
+  "return blame
   return winwidth(0) > 120 ? blame : ''
 endfunction

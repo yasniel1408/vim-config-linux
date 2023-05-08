@@ -1,5 +1,16 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "typescript", "typescriptreact", "javascriptreact", "go"], 
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "graphql",
+    "html",
+    "yaml",
+    "json",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact"
+  ],
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
@@ -7,9 +18,7 @@
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
-  "list.source.symbols.defaultOptions": [
-    "--interactive"
-  ],
+  "list.source.symbols.defaultOptions": ["--interactive"],
   "eslint.codeActionsOnSave.mode": "all",
   "eslint.autoFixOnSave": true,
   "tslint.enable": true,
@@ -32,6 +41,5 @@
   "prettier.tabWidth": 4,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
-  "prettier.endOfLine": "lf",
+  "prettier.endOfLine": "lf"
 }
-
