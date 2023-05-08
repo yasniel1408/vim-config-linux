@@ -47,20 +47,27 @@ let g:signify_sign_change            = '~'
 
 "lightline
 let g:lightline = {
-   'active': {
-     'left': [
-       [ 'mode', 'paste' ],
-       [ 'ctrlpmark', 'git', 'diagnostic', 'cocstatus', 'filename', 'method' ]
-     ],
-     'right':[
-       [ 'filetype', 'fileencoding', 'lineinfo', 'percent' ],
-       [ 'blame' ]
-     ],
-   },
-   'component_function': {
-     'blame': 'LightlineGitBlame',
-   }
- } 
+  \ 'active': {
+  \   'left': [
+  \     [ 'mode', 'paste' ],
+  \     [ 'gitbranch', 'readonly', 'filename', 'modified', 'ctrlpmark', 'git', 'diagnostic', 'cocstatus', 'method' ]
+  \   ],
+  \   'right':[
+  \     [ 'filetype', 'fileencoding', 'lineinfo', 'percent' ],
+  \     [ 'blame' ]
+  \   ],
+  \ },
+  \ 'component_function': {
+  \   'blame': 'LightlineGitBlame',
+  \ }
+  \ }
+
+
+" Set the statusline height
+let g:lightline.height = 1
+
+" Enable tabline mode
+let g:lightline.tabline = 1
 
 function! LightlineGitBlame() abort
   let blame = get(b:, 'coc_git_blame', '')

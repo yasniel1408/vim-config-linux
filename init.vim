@@ -2,14 +2,14 @@
 "██║████╗░██║██║╚══██╔══╝░░░██║░░░██║██║████╗░████║
 "██║██╔██╗██║██║░░░██║░░░░░░╚██╗░██╔╝██║██╔████╔██║
 "██║██║╚████║██║░░░██║░░░░░░░╚████╔╝░██║██║╚██╔╝██║
-"██║██║░╚███║██║░░░██║░░░██╗░░╚██╔╝░░██║██║░╚═╝░██║ 
+"██║██║░╚███║██║░░░██║░░░██╗░░╚██╔╝░░██║██║░╚═╝░██║
 "╚═╝╚═╝░░╚══╝╚═╝░░░╚═╝░░░╚═╝░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝
-"𝕓𝕪 𝕁𝕠𝕒𝕢𝕦𝕚𝕟 𝕍𝕒𝕣𝕖𝕝𝕒 𝕐𝕋               
-"https://www.youtube.com/channel/UCw1Ipy5_P1OL0zUJMfYC7-A					
+"𝕓𝕪 𝕁𝕠𝕒𝕢𝕦𝕚𝕟 𝕍𝕒𝕣𝕖𝕝𝕒 𝕐𝕋
+"https://www.youtube.com/channel/UCw1Ipy5_P1OL0zUJMfYC7-A
 "
-"---------------------------------vim config---------------------------- 
-syntax on 
-set number 
+"---------------------------------vim config----------------------------
+syntax on
+set number
 set mouse=a
 set clipboard=unnamed
 set showcmd
@@ -25,15 +25,15 @@ set backspace=2
 set guioptions-=T
 set guioptions-=L
 
-"Get out of insert mode 
+"Get out of insert mode
 "Salir de modo insertar
 imap nn <Esc>
 imap <C-c> <Esc>l
 
 "mueve bloques de codigo en modo visual o V-Line
-"Moves Blocks of code in visual mode or V-Line xnoremap K :move '<-2<CR>gv-gv xnoremap J :move '>+1<CR>gv-gv 
+"Moves Blocks of code in visual mode or V-Line xnoremap K :move '<-2<CR>gv-gv xnoremap J :move '>+1<CR>gv-gv
 xnoremap K :move '<-2<CR>gv-gv
-xnoremap J :move '>+1<CR>gv-gv 
+xnoremap J :move '>+1<CR>gv-gv
 
 " Better indenting
 " Mejor Indentación
@@ -55,7 +55,7 @@ nmap <C-w> :q <CR>
 nmap <leader>q :q <CR>
 nmap <leader>so :so%<CR>
 
-"search commands 
+"search commands
 "comandos de busqueda
 nmap <leader>gs  :CocSearch
 nmap <leader>fs :FZF<CR>
@@ -74,7 +74,7 @@ let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.git$']
 let NERDTreeIgnore=['\.git$', '\.idea$', '\.vscode$', '\.history$']
 
-"open cocExplorer 
+"open cocExplorer
 "Buscar dos carácteres con easymotion
 "Search for two chars with easymotion
 nmap <Leader>s <Plug>(easymotion-s2)
@@ -84,7 +84,7 @@ nmap <Leader>s <Plug>(easymotion-s2)
 nnoremap <silent> <TAB> :bnext<CR>
 
 " SHIFT-TAB will go back
-" SHIFT-TAB va para atras 
+" SHIFT-TAB va para atras
 nnoremap <silent> <S-TAB> :bprevious<CR>
 
 "close buffer
@@ -93,7 +93,7 @@ nmap <leader>bd :bdelete<CR>
 
 "--gruvbox config--
 "colorscheme onedark
-"let g:gruvbox_contrast_dark = "medium" Using Lua functions: tescope 
+"let g:gruvbox_contrast_dark = "medium" Using Lua functions: tescope
 "
 
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr> "Buscar un archivo
@@ -103,7 +103,7 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr> "Buscar 
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <leader>gb <cmd>lua require('telescope.builtin').git_branches()<cr>
 nnoremap <leader>gs <cmd>lua require('telescope.builtin').git_status()<cr>
-nnoremap <leader>gc <cmd>lua require('telescope.builtin').git_commits()<cr> 
+nnoremap <leader>gc <cmd>lua require('telescope.builtin').git_commits()<cr>
 nnoremap <leader>GC <cmd>lua require('telescope.builtin').git_bcommits()<cr>
 nnoremap <leader>GS <cmd>lua require('telescope.builtin').git_stash()<cr>
 

@@ -25,6 +25,9 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
+"Smooth Scrolling
+Plug 'psliwka/vim-smoothie'
+
 "Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -42,9 +45,9 @@ Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} "mru and stuff
 Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} "color highlighting
 Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}'
- 
+
 "Close pairs () [] {} ''
-"Cerrar los pares () [] {} '' 
+"Cerrar los pares () [] {} ''
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 
@@ -58,7 +61,7 @@ Plug 'norcalli/nvim-colorizer.lua'
 "Multiple cursor like in vscode
 Plug 'terryma/vim-multiple-cursors'
 
-"Have the indent lines 
+"Have the indent lines
 Plug 'yggdroot/indentline'
 
 "Git Integration ______________
@@ -106,7 +109,6 @@ Plug 'dpelle/vim-languagetool'
 Plug 'reedes/vim-pencil'
 Plug 'tpope/vim-markdown'
 Plug 'jtratner/vim-flavored-markdown'
-Plug 'LanguageTool'
 
 "Docker
 Plug 'ekalinin/dockerfile.vim'
