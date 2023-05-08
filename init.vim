@@ -43,6 +43,7 @@ vnoremap > >gv
 "-------------------------------Sources-------------------------------
 source ~/.config/nvim/plugins/plugins.vim
 source ~/.config/nvim/plugins/plug-config.vim
+source ~/.config/nvim/lua/init.lua
 source ~/.config/nvim/themes/onedark.vim
 "--------------------------------Plugins Config--------------------------------------------
 "save file

@@ -30,8 +30,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 "Stable version of coc
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
@@ -39,8 +39,8 @@ Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tslint', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} " mru and stuff
-Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} " color highlighting
+Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} "mru and stuff
+Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} "color highlighting
 Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}'
  
 "Close pairs () [] {} ''
@@ -76,9 +76,6 @@ Plug 'gregsexton/gitv'
 Plug 'tpope/vim-fugitive'
 Plug 'jaxbot/github-issues.vim'
 
-"Smooth Scrolling
-Plug 'psliwka/vim-smoothie'
-
 "REACT
 Plug 'mlaursen/vim-react-snippets'
 Plug 'leafgarland/typescript-vim'
@@ -90,9 +87,6 @@ Plug 'honza/vim-snippets'
 Plug 'bentayloruk/vim-react-es6-snippets'
 Plug 'dominikduda/vim_es7_javascript_react_snippets'
 Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
-
-" Plugin Go
-Plug 'fatih/vim-go'
 
 " Generic Programming Support
 Plug 'honza/vim-snippets'
